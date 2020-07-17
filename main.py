@@ -92,7 +92,7 @@ def start(update, context):
 
 def help(update, context):
     if (update.message.chat.id in Admins) or update.message.chat.id == mainAdmin:
-        update.message.reply_text("/start - Start Bot\n/ping - Check Bot\n/addadmin ChatId - Add Admin\n/remadmin ChatId - Remove Admin\n/ban ChatId - Ban Users\n/unban ChatId - Unban Users\n/Users - Show UserList\n/help - Get Help", quote=True)
+        update.message.reply_text("/start - Start Bot\n/ping - Check Bot\n/addadmin ChatId - Add Admin\n/remadmin ChatId - Remove Admin\n/ban ChatId - Ban Users\n/unban ChatId - Unban Users\n/Users - Show UserList\n/getusers - Download Users list\n/help - Get Help", quote=True)
     elif update.message.chat.id in banlist:
         update.message.reply_text("شما از ربات بن شده اید.", quote=True)
     else:
